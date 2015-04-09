@@ -1,0 +1,28 @@
+public class Selection {
+    public static void main(String[] args) {
+        long start = System.currentTimeMillis();
+        int n[]={4, -1, 0, 7, 1};
+        for (int i=0; i<n.length; i++) {
+        int min = n[i];
+        int min_i = i; 
+        
+        for (int j = i+1; j<n.length; j++) {
+            if (n[j] < min) {
+                min = n[j];
+                min_i = j;
+            }
+        }
+        if (i != min_i) {
+            int tmp = n[i];
+            n[i] = n[min_i];
+            n[min_i] = tmp;
+        }
+     }
+      for (int i=0; i<n.length; i++) {
+            System.out.print(n[i] + " ");
+        }
+        System.out.println("");
+long finish = System.currentTimeMillis()-start;
+        System.out.print("Time is " + finish);
+    }
+}
