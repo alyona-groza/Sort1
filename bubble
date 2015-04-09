@@ -1,4 +1,4 @@
-public class Third {
+public class Bubble {
     public static void main(String[] args) {
         long start = System.currentTimeMillis();
         int n[]={5, -2, 0, 4, 1};
