@@ -1,0 +1,20 @@
+public class Third {
+    public static void main(String[] args) {
+        long start = System.currentTimeMillis();
+        int n[]={5, -2, 0, 4, 1};
+        for (int i=0; i<n.length; i++) {
+            for (int j=0; j<n.length-1; j++) {
+                if (n[j] > n[j+1]) {
+                    int b=n[j];
+                    n[j]=n[j+1];
+                    n[j+1]=b;
+                }
+            }
+        } for (int i=0; i<n.length; i++) {
+            System.out.print(n[i] + " ");
+        }
+        System.out.println("");
+        long finish = System.currentTimeMillis()-start;
+        System.out.print("Time is " + finish);
+    }
+}
