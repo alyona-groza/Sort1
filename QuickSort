@@ -30,6 +30,7 @@ public class QuickSort {
         array[i] = array[j];
         array[j] = temp;
     }
+    
     private static void quickSorting(int start, int end) {
         if (start >= end)
         return;
@@ -52,9 +53,9 @@ public class QuickSort {
     }
     
     public static void main(String[] args) {
-    init();
-    printArray();
-    sort();
-    printArray();
+        init();
+        printArray();
+        sort();
+        printArray();
     }
 }
